@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; Set-Location \"D:\\\\enjumping\\\\enjumping-app\"; & \"C:\\\\Program Files\\\\nodejs\\\\npm.cmd\" run build 2>&1)",
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; Set-Location \"D:\\\\enjumping\\\\enjumping-app\"; Start-Process -FilePath \"C:\\\\Program Files\\\\nodejs\\\\npm.cmd\" -ArgumentList \"run\", \"dev\" -WorkingDirectory \"D:\\\\enjumping\\\\enjumping-app\" -WindowStyle Normal; Start-Sleep -Seconds 6; & \"C:\\\\Program Files\\\\nodejs\\\\node.exe\" -e \"const http = require\\('http'\\); http.get\\('http://localhost:3000', r => console.log\\('OK', r.statusCode\\)\\).on\\('error', e => console.log\\('err', e.message\\)\\);\" 2>&1)"
+    ],
+    "additionalDirectories": [
+      "D:\\enjumping\\enjumping-app\\app",
+      "D:\\enjumping\\enjumping-app\\app\\api\\words"
+    ]
+  }
+}
