@@ -25,6 +25,12 @@ export default async function Home() {
             <div className="flex items-center gap-3">
               <span className="text-xs text-zinc-400 hidden sm:block">{user.email}</span>
               <Link
+                href="/review"
+                className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors px-2 py-1 rounded hover:bg-zinc-100 dark:hover:bg-zinc-800"
+              >
+                開始複習
+              </Link>
+              <Link
                 href="/words"
                 className="text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors px-2 py-1 rounded hover:bg-zinc-100 dark:hover:bg-zinc-800"
               >
